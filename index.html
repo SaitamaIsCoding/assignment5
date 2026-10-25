@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #5 - JS Basics & DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>User Profile & Task Manager</h1>
+      <p class="subtitle">Assignment #5: JS Basics, DOM & Events</p>
+    </header>
+
+    <!-- Part 1 & 2: Profile Info and Update Form -->
+    <section class="card">
+      <h2>1. User Profile</h2>
+      
+      <div id="profile-display" class="profile-info">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+
+      <form id="profile-form" class="form">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" placeholder="Enter username" required>
+        </div>
+
+        <div class="form-group">
+          <label for="birth-year">Birth Year:</label>
+          <input type="number" id="birth-year" placeholder="2008" min="1900" max="2026" required>
+        </div>
+
+        <button type="submit" class="btn primary-btn">Update Profile</button>
+      </form>
+    </section>
+
+    <!-- Part 3: List Manipulation (Hobbies / Tasks) -->
+    <section class="card">
+      <h2>2. Hobbies & Tasks</h2>
+
+      <div class="list-controls">
+        <input type="text" id="item-input" placeholder="New hobby or task...">
+        <div class="button-group">
+          <button type="button" id="add-btn" class="btn success-btn">Add Item</button>
+          <button type="button" id="remove-btn" class="btn danger-btn">Remove Item</button>
+        </div>
+      </div>
+
+      <ul id="items-list" class="custom-list">
+        <!-- List items rendered dynamically via JavaScript -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
